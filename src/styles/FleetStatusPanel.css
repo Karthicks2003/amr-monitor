@@ -1,0 +1,218 @@
+/* ========================================
+   FleetStatusPanel.css
+======================================== */
+
+.fleet-status-panel {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: flex;
+
+    gap: 30px;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    background: #111827;
+
+    border-radius: 20px;
+
+    color: white;
+}
+
+/* ========================================
+   LEFT
+======================================== */
+
+.fleet-left {
+
+    width: 260px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.fleet-title {
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+.donut-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+/* ========================================
+   RIGHT
+======================================== */
+
+.fleet-right {
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    justify-content: center;
+}
+
+/* ========================================
+   STATUS CARD
+======================================== */
+
+.status-card {
+
+    background: #1F2937;
+
+    border-radius: 18px;
+
+    padding: 18px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.status-card:hover {
+
+    transform: translateY(-2px);
+
+    background: #243041;
+}
+
+.status-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.status-title {
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+.status-percent {
+
+    margin-top: 5px;
+
+    font-size: 13px;
+
+    color: #9CA3AF;
+}
+
+.status-number {
+
+    font-size: 34px;
+
+    font-weight: bold;
+}
+
+/* ========================================
+   COLORS
+======================================== */
+
+.active-text {
+
+    color: #10B981;
+}
+
+.inactive-text {
+
+    color: #EF4444;
+}
+
+/* ========================================
+   DROPDOWN
+======================================== */
+
+.dropdown-list {
+
+    margin-top: 15px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.robot-item {
+
+    background: #374151;
+
+    border-radius: 12px;
+
+    padding: 12px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.robot-active {
+
+    color: #10B981;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+.robot-inactive {
+
+    color: #EF4444;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 1000px) {
+
+    .fleet-status-panel {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .fleet-left {
+
+        width: 100%;
+    }
+
+    .fleet-right {
+
+        width: 100%;
+    }
+}

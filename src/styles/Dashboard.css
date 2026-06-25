@@ -1,0 +1,374 @@
+/* ========================================
+   DASHBOARD PAGE
+======================================== */
+
+.dashboard_page{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+    height:100%;
+
+    overflow:hidden;
+}
+
+/* ========================================
+   TOP SECTION
+======================================== */
+
+.home_container{
+
+    flex:1;
+
+    display:flex;
+
+    gap:20px;
+
+    min-height:0;
+}
+
+/* ========================================
+   MAP
+======================================== */
+
+.canvas_map{
+
+    flex:3;
+
+    background:#111827;
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    position:relative;
+
+    border:
+        1px solid #1f2937;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0,0,0,0.35);
+}
+
+/* ========================================
+   EMPTY MAP
+======================================== */
+
+.empty_map{
+
+    width:100%;
+
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#9ca3af;
+
+    gap:10px;
+}
+
+.empty_map h2{
+
+    color:white;
+
+    font-size:32px;
+}
+
+/* ========================================
+   RIGHT PANEL
+======================================== */
+
+.side_container{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+    min-width:330px;
+}
+
+/* ========================================
+   COMMON CARD STYLE
+======================================== */
+
+.map_bar,
+.task_bar,
+.robot_status,
+.control_panel{
+
+    background:#111827;
+
+    border-radius:24px;
+
+    border:
+        1px solid #1f2937;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0,0,0,0.25);
+
+    overflow:hidden;
+}
+
+/* ========================================
+   MAP BAR
+======================================== */
+
+.map_bar{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:20px;
+
+    min-height:220px;
+}
+
+/* ========================================
+   SECTION HEADER
+======================================== */
+
+.section-header{
+
+    margin-bottom:20px;
+}
+
+.section-header h2{
+
+    color:white;
+
+    font-size:22px;
+}
+
+/* ========================================
+   MAP LIST
+======================================== */
+
+.map_list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+    overflow:auto;
+
+    padding-right:4px;
+}
+
+/* ========================================
+   MAP CARD
+======================================== */
+
+.map_card{
+
+    background:#1f2937;
+
+    border:
+        1px solid #374151;
+
+    border-radius:18px;
+
+    padding:16px;
+
+    cursor:pointer;
+
+    transition:0.25s;
+}
+
+.map_card:hover{
+
+    transform:
+        translateY(-2px);
+
+    background:#2563eb;
+}
+
+.map_card h3{
+
+    color:white;
+
+    margin-bottom:6px;
+}
+
+.map_card p{
+
+    color:#d1d5db;
+
+    font-size:14px;
+}
+
+/* ========================================
+   TASK PANEL
+======================================== */
+
+.task_bar{
+
+    flex:2;
+
+    padding:12px;
+}
+
+/* ========================================
+   BOTTOM SECTION
+======================================== */
+
+.below_container{
+
+    display:flex;
+
+    gap:20px;
+
+    height:340px;
+
+    align-items:stretch;
+}
+
+/* ========================================
+   CONTROL PANEL
+======================================== */
+
+.control_panel{
+
+    flex:1;
+
+    min-width:0;
+
+    padding:12px;
+
+    overflow:hidden;
+
+    display:flex;
+}
+
+/* ========================================
+   ROBOT STATUS
+======================================== */
+
+.robot_status{
+
+    flex:1;
+
+    min-width:0;
+
+    padding:12px;
+
+    overflow:hidden;
+
+    display:flex;
+}
+
+/* ========================================
+   INNER PANEL FIX
+======================================== */
+
+.control_panel > *,
+.robot_status > *{
+
+    width:100%;
+
+    height:100%;
+}
+
+/* ========================================
+   SCROLLBAR
+======================================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#374151;
+
+    border-radius:10px;
+}
+
+/* ========================================
+   MOBILE RESPONSIVE
+======================================== */
+
+@media(max-width:1200px){
+
+    .side_container{
+
+        min-width:300px;
+    }
+}
+
+@media(max-width:1024px){
+
+    body{
+
+        overflow:auto;
+    }
+
+    .dashboard_page{
+
+        height:auto;
+    }
+
+    .home_container{
+
+        flex-direction:column;
+    }
+
+    .below_container{
+
+        flex-direction:column;
+
+        height:auto;
+    }
+
+    .canvas_map{
+
+        min-height:500px;
+    }
+
+    .map_bar{
+
+        min-height:250px;
+    }
+
+    .task_bar{
+
+        min-height:300px;
+    }
+
+    .robot_status{
+
+        min-height:300px;
+
+        max-width:none;
+    }
+
+    .control_panel{
+
+        min-height:450px;
+    }
+
+    .side_container{
+
+        min-width:100%;
+    }
+}

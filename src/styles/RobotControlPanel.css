@@ -1,0 +1,302 @@
+/* ========================================
+   MAIN PANEL
+======================================== */
+
+.robot-control-panel {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: flex;
+
+    gap: 14px;
+
+    padding: 14px;
+
+    background: #111827;
+
+    color: white;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+/* ========================================
+   LEFT PANEL
+======================================== */
+
+.control-left {
+
+    width: 300px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 16px;
+
+    flex-shrink: 0;
+}
+
+/* ========================================
+   TOP BAR
+======================================== */
+
+.top-bar {
+
+    display: flex;
+
+    gap: 10px;
+}
+
+/* ========================================
+   SELECT
+======================================== */
+
+.top-bar select {
+
+    flex: 1;
+
+    height: 46px;
+
+    border: 1px solid #374151;
+
+    border-radius: 12px;
+
+    background: #1f2937;
+
+    color: white;
+
+    padding: 0 12px;
+
+    outline: none;
+
+    font-size: 14px;
+}
+
+/* ========================================
+   STOP BUTTON
+======================================== */
+
+.stop-btn {
+
+    width: 95px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #dc2626;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.stop-btn:hover {
+
+    background: #b91c1c;
+}
+
+/* ========================================
+   SPEED SECTION
+======================================== */
+
+.speed-section {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+
+    background: #1f2937;
+
+    padding: 18px;
+
+    border-radius: 16px;
+
+    border: 1px solid #374151;
+
+    min-height: 190px;
+}
+
+/* ========================================
+   SLIDER BOX
+======================================== */
+
+.slider-box {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+/* ========================================
+   SLIDER HEADER
+======================================== */
+
+.slider-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    font-size: 14px;
+
+    color: white;
+
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+.slider-header span:last-child {
+
+    color: #3b82f6;
+
+    font-weight: bold;
+}
+
+/* ========================================
+   SPEED SLIDER
+======================================== */
+
+.speed-slider {
+
+    width: 100%;
+
+    height: 8px;
+
+    border-radius: 10px;
+
+    background: #374151;
+
+    outline: none;
+
+    appearance: none;
+
+    cursor: pointer;
+}
+
+/* ========================================
+   WEBKIT THUMB
+======================================== */
+
+.speed-slider::-webkit-slider-thumb {
+
+    appearance: none;
+
+    width: 18px;
+
+    height: 18px;
+
+    border-radius: 50%;
+
+    background: #3b82f6;
+
+    cursor: pointer;
+
+    border: none;
+}
+
+/* ========================================
+   MOZILLA THUMB
+======================================== */
+
+.speed-slider::-moz-range-thumb {
+
+    width: 18px;
+
+    height: 18px;
+
+    border-radius: 50%;
+
+    background: #3b82f6;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+/* ========================================
+   RIGHT PANEL
+======================================== */
+
+.control-right {
+
+    flex: 1;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+/* ========================================
+   JOYSTICK
+======================================== */
+
+.joystick-area {
+
+    width: 240px;
+
+    height: 240px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,0.05);
+
+    border:
+        2px solid #374151;
+
+    position: relative;
+
+    touch-action: none;
+
+    box-shadow:
+        inset 0 0 20px rgba(255,255,255,0.03),
+        0 0 15px rgba(0,0,0,0.25);
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 1000px) {
+
+    .robot-control-panel {
+
+        flex-direction: column;
+    }
+
+    .control-left {
+
+        width: 100%;
+    }
+
+    .control-right {
+
+        min-height: 240px;
+    }
+
+    .joystick-area {
+
+        width: 210px;
+
+        height: 210px;
+    }
+}

@@ -1,0 +1,314 @@
+/* ========================================
+   PAGE
+======================================== */
+
+.login-page {
+
+    width: 100%;
+
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0f172a,
+            #111827,
+            #1e293b
+        );
+
+    font-family: sans-serif;
+}
+
+/* ========================================
+   BACKGROUND GLOW
+======================================== */
+
+.bg-glow {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    filter: blur(120px);
+
+    opacity: 0.25;
+}
+
+.glow1 {
+
+    width: 320px;
+
+    height: 320px;
+
+    background: #2563eb;
+
+    top: -80px;
+
+    left: -80px;
+}
+
+.glow2 {
+
+    width: 300px;
+
+    height: 300px;
+
+    background: #7c3aed;
+
+    bottom: -100px;
+
+    right: -100px;
+}
+
+/* ========================================
+   LOGIN CARD
+======================================== */
+
+.login-card {
+
+    width: 380px;
+
+    padding: 40px;
+
+    border-radius: 28px;
+
+    background:
+        rgba(17,24,39,0.85);
+
+    backdrop-filter: blur(18px);
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,0.45);
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    z-index: 10;
+}
+
+/* ========================================
+   LOGO
+======================================== */
+
+.login-logo {
+
+    width: 80px;
+
+    height: 80px;
+
+    border-radius: 50%;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 36px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #7c3aed
+        );
+
+    box-shadow:
+        0 10px 25px rgba(37,99,235,0.4);
+}
+
+/* ========================================
+   TITLE
+======================================== */
+
+.login-title {
+
+    text-align: center;
+
+    color: white;
+
+    font-size: 32px;
+
+    margin: 0;
+}
+
+/* ========================================
+   SUBTITLE
+======================================== */
+
+.login-subtitle {
+
+    text-align: center;
+
+    color: #9ca3af;
+
+    font-size: 14px;
+
+    margin-top: -10px;
+}
+
+/* ========================================
+   INPUT GROUP
+======================================== */
+
+.input-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.input-group label {
+
+    color: #d1d5db;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+/* ========================================
+   INPUT
+======================================== */
+
+.input-group input {
+
+    height: 54px;
+
+    border-radius: 14px;
+
+    border:
+        1px solid #374151;
+
+    background: #0f172a;
+
+    color: white;
+
+    padding: 0 16px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+.input-group input:focus {
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 4px
+        rgba(37,99,235,0.15);
+}
+
+/* ========================================
+   BUTTON
+======================================== */
+
+.login-btn {
+
+    height: 56px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #3b82f6
+        );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+.login-btn:hover {
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(37,99,235,0.35);
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.login-footer {
+
+    text-align: center;
+
+    color: #9ca3af;
+
+    font-size: 14px;
+}
+
+/* ========================================
+   LINK
+======================================== */
+
+.login-link {
+
+    margin-left: 6px;
+
+    color: #60a5fa;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+.login-link:hover {
+
+    text-decoration: underline;
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 500px) {
+
+    .login-card {
+
+        width: 90%;
+
+        padding: 28px;
+    }
+
+    .login-title {
+
+        font-size: 26px;
+    }
+}
