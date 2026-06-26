@@ -58,7 +58,7 @@ const Mapping = ({
     try {
 
       const res = await fetch(
-        "http://localhost:8000/maps",
+        "https://occupant-perm-neurosis.ngrok-free.dev/maps",
         {
           headers: {
             Authorization:
@@ -446,7 +446,7 @@ const Mapping = ({
     try {
 
       const res = await fetch(
-        "http://localhost:8000/save-map",
+        "https://occupant-perm-neurosis.ngrok-free.dev/save-map",
         {
           method: "POST",
 

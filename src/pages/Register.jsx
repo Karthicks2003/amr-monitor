@@ -14,7 +14,7 @@ function Register() {
     try {
 
       const response = await axios.post(
-        "http://127.0.0.1:8000/register",
+        "https://occupant-perm-neurosis.ngrok-free.dev/register",
         {
           name,
           password
