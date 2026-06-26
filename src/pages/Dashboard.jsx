@@ -32,36 +32,58 @@ const Dashboard = ({
     // FETCH MAPS
     // =========================
 
-    const fetchMaps = async () => {
+//     const fetchMaps = async () => {
 
-        try {
+//         try {
 
-            const res = await fetch(
-  "https://occupant-perm-neurosis.ngrok-free.dev/maps",
-  {
-    headers: {
-      Authorization: `Bearer ${token}`,
-    },
-  }
-);
+//             const res = await fetch(
+//   "https://occupant-perm-neurosis.ngrok-free.dev/maps",
+//   {
+//     headers: {
+//       Authorization: `Bearer ${token}`,
+//     },
+//   }
+// );
 
-console.log("Status:", res.status);
-console.log("Content-Type:", res.headers.get("content-type"));
+// console.log("Status:", res.status);
+// console.log("Content-Type:", res.headers.get("content-type"));
 
-const text = await res.text();
-console.log("Response:", text);
+// const text = await res.text();
+// console.log("Response:", text);
 
-            const data =
-                await res.json();
+//             const data =
+//                 await res.json();
 
-            setMaps(data.maps || []);
+//             setMaps(data.maps || []);
 
-        } catch (err) {
+//         } catch (err) {
 
-            console.log(err);
-        }
-    };
+//             console.log(err);
+//         }
+//     };
 
+const fetchMaps = async () => {
+    try {
+        const res = await fetch(
+            "https://occupant-perm-neurosis.ngrok-free.dev/maps",
+            {
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            }
+        );
+
+        console.log("Status:", res.status);
+        console.log("Content-Type:", res.headers.get("content-type"));
+
+        const text = await res.text();
+
+        console.log(text);
+
+    } catch (err) {
+        console.error(err);
+    }
+};
     // =========================
     // INITIAL LOAD
     // =========================
