@@ -37,14 +37,19 @@ const Dashboard = ({
         try {
 
             const res = await fetch(
-                "https://occupant-perm-neurosis.ngrok-free.dev/maps",
-                {
-                    headers: {
-                        Authorization:
-                            `Bearer ${token}`
-                    }
-                }
-            );
+  "https://occupant-perm-neurosis.ngrok-free.dev/maps",
+  {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  }
+);
+
+console.log("Status:", res.status);
+console.log("Content-Type:", res.headers.get("content-type"));
+
+const text = await res.text();
+console.log("Response:", text);
 
             const data =
                 await res.json();
