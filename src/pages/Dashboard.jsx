@@ -37,7 +37,7 @@ const Dashboard = ({
         try {
 
             const res = await fetch(
-                "http://localhost:8000/maps",
+                "https://occupant-perm-neurosis.ngrok-free.dev/maps",
                 {
                     headers: {
                         Authorization:
@@ -83,7 +83,7 @@ const Dashboard = ({
         try {
 
             const res = await fetch(
-                "http://localhost:8000/navigation-map",
+                "https://occupant-perm-neurosis.ngrok-free.dev/navigation-map",
                 {
                     method: "POST",
 
